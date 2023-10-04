@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-principal: #2D033B;
+    --color-secundaria: #810CA8;
+    --color-terciaria: #C147E9;
+    --color-text: #fff;
+
+    --font-principal: 'Krona One', sans-serif;
+    --font-secundaria: 'Montserrat', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #000000;
+    background-color: var(--color-principal);
+    color: var(--color-text);
+}
+
+.titulo-destaque{
+    color: #2717b3;
+}
+.cabecalho{
+    padding: 2% 0 0 15%;
+}
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+    text-decoration: none;
+}
+
+.cabecalho__menu__link{
+    font-family: var(--font-secundaria);
+    font-weight: 600;
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--color-text);
+}
+.cabecalho__menu__link:hover {
+    color: var(--color-terciaria);
+    text-decoration: dotted;
+    text-decoration: underline;
+}
+.apresentacao{
+    padding: 6% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo{
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--font-principal);
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 24px;
+    font-family: var(--font-secundaria);
+}
+
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links__subtitulo{
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.apresentacao__links__link{
+    border: 2px solid var(--color-secundaria);
+    width: 378px;
+    text-align: center;
+    border-radius: 30px 5px 30px 5px;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: var(--font-secundaria);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--color-terciaria);
+}
+.rodape{
+    padding: 24px;
+    background-color: var(--color-terciaria);
+    font-family: var(--font-secundaria);
+    text-align: center;
+}
